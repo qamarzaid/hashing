@@ -18,7 +18,8 @@ using some hash functions.
 
 ```
 As  python don't aloow or support to initialize an empty array or list of user's choice initially.
-So here we have tried to create an Array or List of user's desired size  not emepty but it contains "_" which we have assumed as empty spaces.
+So here we have tried to create an Array or List of user's desired size  not emepty but 
+it contains "_" which we have assumed as empty spaces.
 ```
 #### E.g.
 ```python
@@ -33,3 +34,19 @@ enter size10
 ##### Output
 ```
 ["_","_","_","_","_","_","_","_","_","_"]
+```
+##### Code
+```python
+size=int(input("enter size"))
+h_ash=["_"]* size
+
+for i in range(0,size):
+    ele=int(input("enter entry ; "))
+    if ele>0:
+        M = ele % size
+        h_ash[M]=ele 
+        #print(M)
+    else:
+        pass 
+
+print(h_ash)
