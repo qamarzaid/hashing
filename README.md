@@ -14,9 +14,22 @@ So in dictionary the key should be always unique.
 
 But here in this code we are going to try hashing technique and gimplement it without dictionary.
 using some hash functions.
+```
 
-
+```
+As  python don't aloow or support to initialize an empty array or list of user's choice initially.
+So here we have tried to create an Array or List of user's desired size  not emepty but it contains "_" which we have assumed as empty spaces.
+```
+#### E.g.
 ```python
-
-
-
+size=int(input("enter size"))
+h_ash=["_"]* size
+print(h_ash)
+```
+##### Input
+```
+enter size10
+```
+##### Output
+```
+["_","_","_","_","_","_","_","_","_","_"]
