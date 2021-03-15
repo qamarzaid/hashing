@@ -1,8 +1,8 @@
 ## Hashing 
 ```
 Hashing is an important Data Structure which is designed to use a special function called the 
-Hash function which is used to map a given value with a particular key for faster access of elements. 
-The efficiency of mapping depends of the efficiency of the hash function used.
+Hash function which is used to map a given value with a particular key for faster access 
+of elements. The efficiency of mapping depends of the efficiency of the hash function used.
 ```
 ### Hashing In Python Without Using Dictionary
 ```
@@ -44,7 +44,7 @@ for i in range(0,size):             #iterating troughout the list for taking the
     ele=int(input("enter entry ; "))    #taking the input of element
     if ele>0:                       # checking the contion if the entery or element is empty or 0
         M = ele % size              # Hash Function used
-        h_ash[M]=ele                # alocating  position to the element at the outcome of hash function index 
+        h_ash[M]=ele     # alocating  position to the element at the outcome of hash function index 
         
     else:
         pass 
@@ -68,4 +68,7 @@ enter entry ; 0
 ##### Output
 ```
 ['_', '_', 12, 93, 74, 45, 56, 67, 78, '_']
+```
+[Demo code link](https://replit.com/@ZaidQamar/hashing#main.py)
 
+#### Done
