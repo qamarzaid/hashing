@@ -1,4 +1,4 @@
-### Hashing 
+## Hashing 
 ```
 Hashing is an important Data Structure which is designed to use a special function called the 
 Hash function which is used to map a given value with a particular key for faster access of elements. 
@@ -37,16 +37,16 @@ enter size10
 ```
 ##### Code
 ```python
-size=int(input("enter size"))
-h_ash=["_"]* size
+size=int(input("enter size"))       #taking input size
+h_ash=["_"]* size                   # creating a list of size*("_")
 
-for i in range(0,size):
-    ele=int(input("enter entry ; "))
-    if ele>0:
-        M = ele % size
-        h_ash[M]=ele 
-        #print(M)
+for i in range(0,size):             #iterating troughout the list for taking the input of elements
+    ele=int(input("enter entry ; "))    #taking the input of element
+    if ele>0:                       # checking the contion if the entery or element is empty or 0
+        M = ele % size              # Hash Function used
+        h_ash[M]=ele                # alocating  position to the element at the outcome of hash function index 
+        
     else:
         pass 
 
-print(h_ash)
+print(h_ash)                        #printing out the list after completion of hashing
