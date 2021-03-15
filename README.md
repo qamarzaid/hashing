@@ -50,3 +50,22 @@ for i in range(0,size):             #iterating troughout the list for taking the
         pass 
 
 print(h_ash)                        #printing out the list after completion of hashing
+```
+##### Input
+```
+enter size10
+enter entry ; 56
+enter entry ; 78
+enter entry ; 93
+enter entry ; 45
+enter entry ; 12
+enter entry ; 0
+enter entry ; 0
+enter entry ; 74
+enter entry ; 67
+enter entry ; 0
+```
+##### Output
+```
+['_', '_', 12, 93, 74, 45, 56, 67, 78, '_']
+
