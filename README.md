@@ -72,3 +72,8 @@ enter entry ; 0
 [Demo code link](https://replit.com/@ZaidQamar/hashing#main.py)
 
 #### Done
+
+### Collision in Hashing
+```
+While doing hashing when two or more element get the same position this situation occured is called Collision.
+There are various method for resolving this situations know as Collision Resolution Technique.
