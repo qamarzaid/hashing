@@ -80,7 +80,8 @@ There are various method for resolving this situations know as Collision Resolut
 ```
 #### Collision resolution technique: Linear Probing
 ```
-When collision occurs, then collision can be solved by placing second record linearly down whenever the empty location is found.
+When collision occurs, then collision can be solved by placing second record linearly down 
+whenever the empty location is found.
 ```
 ##### E.g.
 ```
