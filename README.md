@@ -103,17 +103,36 @@ h_ash=["_"]* size                # creating a list of size*("_")
 
 for i in range(0,size):         #  #iterating troughout the list for taking the input of elements
     ele=int(input("enter entry ; "))     #taking the input of element
-    if ele>0:
-        M = ele % size
-        if h_ash[M]=="_":
-		h_ash[M]=ele
-	else:
-		N=M
+    if ele>0:				# checking the contion if the entery or element is empty or 0
+        M = ele % size			# Hash Function used
+        if h_ash[M]=="_":		# checking the hash function out position in list is empty or not.
+		h_ash[M]=ele		# if its empty then alocate element there
+	else:				# else
+		N=M			
 		i=0
-		while h_ash[N]!="_":
-			N=(M+i)%size
+		while h_ash[N]!="_":	# iterate in the list till found empty place 
+			N=(M+i)%size	#new hash function
 			i=i+1
-		h_ash[N]=ele
+		h_ash[N]=ele		#alocate element there
     else:
         pass
 print(h_ash)
+```
+##### Input
+```
+enter size10
+enter entry ; 12
+enter entry ; 44
+enter entry ; 58
+enter entry ; 21
+enter entry ; 48
+enter entry ; 51
+enter entry ; 22
+enter entry ; 91
+enter entry ; 0
+enter entry ; 0
+```
+##### Output
+```
+['_', 21, 12, 51, 44, 22, 91,'_', 58, 48]
+```
