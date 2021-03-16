@@ -136,3 +136,6 @@ enter entry ; 0
 ```
 ['_', 21, 12, 51, 44, 22, 91,'_', 58, 48]
 ```
+[Demo Code Link](https://replit.com/@ZaidQamar/linear-probing#main.py)
+
+#### Done
