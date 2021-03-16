@@ -77,3 +77,43 @@ enter entry ; 0
 ```
 While doing hashing when two or more element get the same position this situation occured is called Collision.
 There are various method for resolving this situations know as Collision Resolution Technique.
+```
+#### Collision resolution technique: Linear Probing
+```
+When collision occurs, then collision can be solved by placing second record linearly down whenever the empty location is found.
+```
+##### E.g.
+```
+ Let 12, 44, 58, 21, 48, 51, 22, 91 is to be inserted in hash table.
+h(key) = key % table size
+h(12) = 12 % 10 = 2 insert at 2nd bucket
+h(44) = 44 % 10 = 4 insert at 4th bucket
+h(58) = 58 % 10 = 8 insert at 8th bucket
+h(21) = 21 % 10 = 1 insert at 1st bucket
+h(48) = 48 % 10 = 8 No vacant space at 8th bucket so insert at 9th
+h(51) = 51 % 10 = 1 No vacant space at 1st bucket so insert at 3rd
+h(22) = 22 % 10 = 2 No vacant space at 2nd bucket so insert at 5th
+h(91) = 91 % 10 = 1 No vacant space at 1st bucket so insert at 6
+```
+##### Code
+```python
+
+size=int(input("enter size"))   #taking input size
+h_ash=["_"]* size                # creating a list of size*("_")
+
+for i in range(0,size):         #  #iterating troughout the list for taking the input of elements
+    ele=int(input("enter entry ; "))     #taking the input of element
+    if ele>0:
+        M = ele % size
+        if h_ash[M]=="_":
+		h_ash[M]=ele
+	else:
+		N=M
+		i=0
+		while h_ash[N]!="_":
+			N=(M+i)%size
+			i=i+1
+		h_ash[N]=ele
+    else:
+        pass
+print(h_ash)
