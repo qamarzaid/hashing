@@ -44,7 +44,7 @@ for i in range(0,size):             #iterating troughout the list for taking the
     ele=int(input("enter entry ; "))    #taking the input of element
     if ele>0:                       # checking the contion if the entery or element is empty or 0
         M = ele % size              # Hash Function used
-        h_ash[M]=ele     # alocating  position to the element at the outcome of hash function index 
+        h_ash[M]=ele   # alocating  position to the element at the outcome of hash function index 
         
     else:
         pass 
