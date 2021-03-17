@@ -209,4 +209,4 @@ enter entry ; 0
 ```
 [91, 21, 12, 22, 44, 51, '_', '_', 58, 48]
 ```
-
+[Demo Code Link](https://replit.com/@ZaidQamar/qaudratic-hashing#main.py)
