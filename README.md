@@ -191,3 +191,22 @@ for i in range(0,size):
         pass
 print(h_ash)
 ```
+##### Input
+```
+enter size10
+enter entry ; 12
+enter entry ; 44
+enter entry ; 58
+enter entry ; 21
+enter entry ; 48
+enter entry ; 51
+enter entry ; 22
+enter entry ; 91
+enter entry ; 0
+enter entry ; 0
+```
+##### Output
+```
+[91, 21, 12, 22, 44, 51, '_', '_', 58, 48]
+```
+
