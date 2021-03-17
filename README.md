@@ -140,3 +140,33 @@ enter entry ; 0
 [Demo Code Link](https://replit.com/@ZaidQamar/linear-probing#main.py)
 
 #### Done
+
+#### Collision resolution technique: Qaudratic Probing
+```
+Quadratic probing operates by taking the original hash value and adding successive
+values of an arbitrary quadratic polynomial to the starting value.
+```
+##### E.g.
+```
+Let 37, 90, 55, 22, 11, 17, 49, 87 is to be inserted in hash table.
+h(key) = (h(key) + i 2 ) % m
+where m can be table size or any prime number
+h(37) = 37 % 10 = 7 insert at 7 th bucket
+h(90) = 90 % 10 = 0 insert at 0 th bucket
+h(55) = 55 % 10 = 5 insert at 5 th bucket
+h(22) = 22 % 10 = 2 insert at 2 nd bucket
+h(11) = 11 % 10 = 1 insert at 1 st
+h(17) = 17 % 10 = 7 collision, Hence apply quadratic probing
+bucket
+apply value of i = 1, 2, 3.... Till get the vacant bucket
+h(17) = (17+1 2 )%10 =8
+insert 17 at 8 th bucket
+h(49) = 49 % 10 = 9 insert 49 at 9 th bucket
+h(87) = 87 % 10 = 7 collision, hence apply quadratic probing
+h(key) = (h(key)+i 2 )%m
+//apply values of i = 1,2,3......
+h(87) = (87 + 1 2 ) % 10 = 88 % 10 = 8 collision, again apply QP by putting i=2
+h(87) = (87 + 2 2 )% 10 = 91 % 10 = 1 collision, again apply QP by putting i=3
+h(87) = (87 + 3 2 )% 10 = 86 % 10 = 6 insert 87 at 6 th vacant bucket
+```
+##### Code
