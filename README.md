@@ -114,7 +114,7 @@ for i in range(0,size):         #  #iterating troughout the list for taking the 
 		while h_ash[N]!="_":	# iterate in the list till found empty place 
 			N=(M+i)%size	#new hash function
 			i=i+1
-		h_ash[N]=ele		#alocate element there
+		h_ash[N]=ele	#alocate element there
     else:
         pass
 print(h_ash)
