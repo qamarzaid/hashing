@@ -170,3 +170,24 @@ h(87) = (87 + 2 2 )% 10 = 91 % 10 = 1 collision, again apply QP by putting i=3
 h(87) = (87 + 3 2 )% 10 = 86 % 10 = 6 insert 87 at 6 th vacant bucket
 ```
 ##### Code
+```python
+size=int(input("enter size"))
+h_ash=["_"]* size
+
+for i in range(0,size):
+    ele=int(input("enter entry ; "))
+    if ele>0:
+        M = ele % size
+        if h_ash[M]=="_":
+		h_ash[M]=ele
+	else:
+		N=M
+		i=1
+		while h_ash[N]!="_":
+			N=(M+i*i)%size
+			i=i+1
+		h_ash[N]=ele
+    else:
+        pass
+print(h_ash)
+```
