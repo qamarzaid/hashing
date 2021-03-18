@@ -214,6 +214,6 @@ enter entry ; 0
 ```
 [Demo Code Link](https://replit.com/@ZaidQamar/qaudratic-hashing#main.py)
 
-![](https://media.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy.gif)
+
 
 ##### Done
